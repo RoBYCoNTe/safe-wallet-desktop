@@ -127,7 +127,8 @@ class LoginPage extends React.Component {
 	}
 
 	login(e) {
-
+		e.preventDefault()
+		
 		const { state } = this 
 		const { filename, password } = state 
 		const validFilename = isValid(filename)
